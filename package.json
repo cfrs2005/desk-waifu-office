@@ -1,0 +1,29 @@
+{
+  "name": "desk-waifu-office",
+  "version": "0.1.0",
+  "description": "Virtual office hub for desk-waifu chibi clients — multi-user × multi-agent live room over SSE.",
+  "type": "module",
+  "bin": {
+    "desk-waifu-office": "./server.js"
+  },
+  "main": "./server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "server.js",
+    "lib/",
+    "public/",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^8.3.0",
+    "@fastify/static": "^7.0.4",
+    "better-sqlite3": "^11.3.0",
+    "fastify": "^4.28.1"
+  },
+  "license": "MIT"
+}
